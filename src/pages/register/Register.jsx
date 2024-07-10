@@ -2,9 +2,11 @@ import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Authentication/AuthProvider";
 import { updateProfile } from "firebase/auth";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = (props) => {
-    const { createUser, login } = useContext(AuthContext)
+    const { createUser } = useContext(AuthContext)
+    const navigate = useNavigate()
     const {
         register,
         handleSubmit,
@@ -18,7 +20,8 @@ const Register = (props) => {
                 })
 
             })
-        login(data.email, data.password)
+        navigate('/login')
+
 
 
 
@@ -66,6 +69,7 @@ const Register = (props) => {
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Register</button>
                         </div>
+                        <p>Already have an account? <Link to='/login'><span className="text-purple-500 underline">Login</span></Link></p>
                     </form>
                 </div>
             </div>

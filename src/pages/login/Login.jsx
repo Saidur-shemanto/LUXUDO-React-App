@@ -1,8 +1,11 @@
 import { useContext } from "react";
 import AuthProvider, { AuthContext } from "../../Authentication/AuthProvider";
 import { useForm } from "react-hook-form";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Login = (props) => {
+    const navigate = useNavigate()
+    const location = useLocation()
     const { createUser, login, googleLogin } = useContext(AuthContext)
     const {
         register,
@@ -10,8 +13,12 @@ const Login = (props) => {
         formState: { errors }
     } = useForm();
     const handleEmailPassLogin = data => {
-        console.log(data.email, data.password)
         login(data.email, data.password)
+            .then(res => {
+                console.log(res)
+                navigate(location.state ? location.state : '/')
+
+            })
 
     }
     const handleGoogleLogin = () => {
@@ -53,6 +60,7 @@ const Login = (props) => {
                         <div>
                             <button onClick={handleGoogleLogin} className="btn">Login With Google</button>
                         </div>
+                        <p>Do not have an account? <Link to='/register'><span className="text-purple-500 underline">Register</span></Link></p>
                     </form>
                 </div>
             </div>

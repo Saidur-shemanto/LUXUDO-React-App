@@ -6,8 +6,8 @@ const PropertyIndiv = ({ property }) => {
     console.log(property)
     return (
 
-        <div className="card bg-base-100 w-96 shadow-xl">
-            <figure>
+        <div className=" card bg-base-100 w-96 shadow-xl">
+            <figure className="h-52">
                 <img
                     src={property.image}
                     alt="Shoes" />

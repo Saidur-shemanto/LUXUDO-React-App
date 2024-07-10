@@ -22,6 +22,7 @@ const PropertyCard = (props) => {
         <Swiper
             modules={[Scrollbar, A11y, Autoplay]}
             slidesPerView={4}
+            spaceBetween='100'
             autoplay={{
                 disableOnInteraction: false,
                 delay: 1000,
