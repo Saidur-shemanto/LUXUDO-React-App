@@ -6,6 +6,8 @@ import { GiIsland } from "react-icons/gi";
 import Banner from "./banner/Banner";
 import BannerText from "./banner/bannerText";
 import PropertyCard from "./propertyCard/PropertyCards";
+import BulletInfo from "./bulletInfo/BulletInfo";
+import BulletInfoImage from "./bulletInfo/BulletInfoImage";
 
 const Home = (props) => {
     return (
@@ -48,6 +50,12 @@ const Home = (props) => {
             <div>
                 <PropertyCard></PropertyCard>
             </div>
+            <div className="flex w-full">
+                <BulletInfo></BulletInfo>
+                <BulletInfoImage></BulletInfoImage>
+
+            </div>
+
 
 
 
