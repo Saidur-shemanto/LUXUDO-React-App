@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import { CiLocationOn } from "react-icons/ci";
 
 const PropertyIndiv = ({ property }) => {
 
@@ -13,15 +14,19 @@ const PropertyIndiv = ({ property }) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
+                    {property.segment_name}
+                    <div className="badge bg-black text-white">For {property.status}</div>
                 </h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
+                <p>{property.estate_title}</p>
+                <div className="card-actions ">
+                    <div className="flex justify-center items-center font-semibold "><CiLocationOn style={{ strokeWidth: "1" }} />{property.location} </div>
+
                 </div>
-                <Link to={`properties/${property.id}`}><button className="btn">View Details</button></Link>
+                <div className="mx-auto">
+                    <Link to={`properties/${property.id}`}><button className="btn">View Details</button></Link>
+
+                </div>
+
             </div>
         </div>
     )
