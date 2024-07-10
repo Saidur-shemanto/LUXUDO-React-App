@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1",
+        "estate_title": "Luxury Penthouse in Downtown",
+        "segment_name": "Penthouse",
+        "description": "A spacious and luxurious penthouse with stunning city views.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "3500 sq ft",
+        "location": "Downtown City",
+        "image": "../src/assets/beachHouse.jpeg"
+    },
+    {
+        "id": "2",
+        "estate_title": "Beachfront Property with Private Beach",
+        "segment_name": "Beachfront Property",
+        "description": "A beautiful beachfront property with private access to the beach.",
+        "price": "$3,750,000",
+        "status": "sale",
+        "area": "4500 sq ft",
+        "location": "Malibu, CA",
+        "image": "../src/assets/pentaHouse.jpeg"
+    },
+    {
+        "id": "3",
+        "estate_title": "Tropical Island Resort",
+        "segment_name": "Resort",
+        "description": "A tropical paradise resort with all-inclusive amenities.",
+        "price": "$10,000,000",
+        "status": "sale",
+        "area": "15000 sq ft",
+        "location": "Bahamas",
+        "image": "../src/assets/privateIsland.jpg"
+    },
+    {
+        "id": "4",
+        "estate_title": "Private Island with Villa",
+        "segment_name": "Private Island",
+        "description": "A private island featuring a luxurious villa and pristine beaches.",
+        "price": "$25,000,000",
+        "status": "sale",
+        "area": "50000 sq ft",
+        "location": "Fiji",
+        "image": "../src/assets/resort.jpg"
+    },
+    {
+        "id": "5",
+        "estate_title": "Modern Villa with Ocean Views",
+        "segment_name": "Villa",
+        "description": "A modern villa with stunning ocean views and infinity pool.",
+        "price": "$5,500,000",
+        "status": "sale",
+        "area": "4000 sq ft",
+        "location": "Miami, FL",
+        "image": "../src/assets/villaMansion.jpeg"
+    },
+    {
+        "id": "6",
+        "estate_title": "Grand Mansion with Expansive Grounds",
+        "segment_name": "Mansion",
+        "description": "A grand mansion with expansive grounds and luxurious amenities.",
+        "price": "$8,200,000",
+        "status": "sale",
+        "area": "10000 sq ft",
+        "location": "Beverly Hills, CA",
+        "image": "https://example.com/images/mansion1.jpg"
+    },
+    {
+        "id": "7",
+        "estate_title": "Penthouse with Panoramic Views",
+        "segment_name": "Penthouse",
+        "description": "A penthouse with panoramic views of the city skyline.",
+        "price": "$3,000,000",
+        "status": "sale",
+        "area": "3200 sq ft",
+        "location": "New York, NY",
+        "image": "https://example.com/images/penthouse2.jpg"
+    },
+    {
+        "id": "8",
+        "estate_title": "Secluded Beachfront Villa",
+        "segment_name": "Beachfront Property",
+        "description": "A secluded beachfront villa with private pool and garden.",
+        "price": "$4,500,000",
+        "status": "sale",
+        "area": "3800 sq ft",
+        "location": "Maui, HI",
+        "image": "https://example.com/images/beachfront2.jpg"
+    },
+    {
+        "id": "9",
+        "estate_title": "Exclusive Mountain Resort",
+        "segment_name": "Resort",
+        "description": "An exclusive mountain resort with luxurious accommodations.",
+        "price": "$12,000,000",
+        "status": "sale",
+        "area": "20000 sq ft",
+        "location": "Aspen, CO",
+        "image": "https://example.com/images/resort2.jpg"
+    },
+    {
+        "id": "10",
+        "estate_title": "Historic Mansion with Modern Upgrades",
+        "segment_name": "Mansion",
+        "description": "A historic mansion with modern upgrades and beautiful architecture.",
+        "price": "$9,500,000",
+        "status": "sale",
+        "area": "12000 sq ft",
+        "location": "Newport, RI",
+        "image": "https://example.com/images/mansion2.jpg"
+    }
+]
