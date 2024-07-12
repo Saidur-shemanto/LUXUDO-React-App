@@ -1,11 +1,13 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import AuthProvider, { AuthContext } from "../../Authentication/AuthProvider";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 const Login = (props) => {
     const navigate = useNavigate()
     const location = useLocation()
+    const [toggle, setToggle] = useState(false)
     const { createUser, login, googleLogin } = useContext(AuthContext)
     const {
         register,
@@ -49,7 +51,11 @@ const Login = (props) => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" placeholder="password" className="input input-bordered" {...register("password")} required />
+                            <div className="flex relative">
+                                <input type={toggle ? 'text' : 'password'} name="password" placeholder="password" className="input w-full input-bordered" {...register("password")} required />
+                                <p className="cursor-pointer absolute right-4 top-4" onClick={() => { setToggle(!toggle) }}>{toggle ? <FaRegEyeSlash /> : <FaRegEye />}</p>
+
+                            </div>
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>

@@ -8,7 +8,7 @@
         "status": "sale",
         "area": "3500 sq ft",
         "location": "Downtown City",
-        "image": "../src/assets/beachHouse.jpeg"
+        "image": "../src/assets/pentaHouse.jpeg"
     },
     {
         "id": "2",
@@ -19,7 +19,7 @@
         "status": "sale",
         "area": "4500 sq ft",
         "location": "Malibu, CA",
-        "image": "../src/assets/pentaHouse.jpeg"
+        "image": "../src/assets/beachHouse.jpeg"
     },
     {
         "id": "3",
@@ -41,7 +41,7 @@
         "status": "sale",
         "area": "50000 sq ft",
         "location": "Fiji",
-        "image": "../src/assets/resort.jpg"
+        "image": "../src/assets/privateIsland2.jpg"
     },
     {
         "id": "5",
@@ -63,7 +63,7 @@
         "status": "sale",
         "area": "10000 sq ft",
         "location": "Beverly Hills, CA",
-        "image": "https://example.com/images/mansion1.jpg"
+        "image": "../src/assets/villaMansion2.jpg"
     },
     {
         "id": "7",
@@ -74,7 +74,7 @@
         "status": "sale",
         "area": "3200 sq ft",
         "location": "New York, NY",
-        "image": "https://example.com/images/penthouse2.jpg"
+        "image": "../src/assets/pentaHouse2.png"
     },
     {
         "id": "8",
@@ -85,7 +85,7 @@
         "status": "sale",
         "area": "3800 sq ft",
         "location": "Maui, HI",
-        "image": "https://example.com/images/beachfront2.jpg"
+        "image": "../src/assets/beachFront.jpg"
     },
     {
         "id": "9",
@@ -96,7 +96,7 @@
         "status": "sale",
         "area": "20000 sq ft",
         "location": "Aspen, CO",
-        "image": "https://example.com/images/resort2.jpg"
+        "image": "../src/assets/resort.jpg"
     },
     {
         "id": "10",
@@ -107,6 +107,6 @@
         "status": "sale",
         "area": "12000 sq ft",
         "location": "Newport, RI",
-        "image": "https://example.com/images/mansion2.jpg"
+        "image": "../src/assets/villaMansion3.jpg"
     }
 ]

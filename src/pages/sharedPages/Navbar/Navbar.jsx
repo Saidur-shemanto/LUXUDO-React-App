@@ -11,8 +11,9 @@ const Navbar = (props) => {
 
     ]
     const navlist = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/properties">Properties</NavLink></li>
+        <li><NavLink to={`/profile/${user.uid}`}>About</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -63,7 +64,7 @@ const Navbar = (props) => {
                             </div>
 
                         </div>
-                        <p>{user.displayName}</p>
+                        <Link to={`profile/${user.uid}`}>{user.displayName}</Link>
                         <button onClick={handleLogout} className="btn">Logout</button>
                     </div> :
                     <div>

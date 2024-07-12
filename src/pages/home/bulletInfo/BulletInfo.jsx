@@ -1,9 +1,16 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const BulletInfo = (props) => {
-    return (
-        <ul className="timeline timeline-vertical gap-5">
-            <li className="grid gap-10">
+    useEffect(() => {
+        AOS.init();
 
-                <div className="timeline-middle"><p className="rounded-full bg-black text-white w-10 h-10 flex justify-center items-center">1</p>
+    }, [])
+    return (
+        <ul className="timeline timeline-vertical gap-5 w-full ">
+            <li className="grid gap-10 !grid-cols-none" data-aos="fade-up"  >
+
+                <div className="timeline-middle"><p className="rounded-full bg-black text-white w-10 h-10 flex justify-center items-center" >1</p>
 
                 </div>
                 <div className="timeline-end "><div>
@@ -12,11 +19,11 @@ const BulletInfo = (props) => {
                 </div></div>
 
             </li>
-            <li className="grid gap-10">
+            <li className="grid gap-10 !grid-cols-none" data-aos="fade-up" >
 
 
                 <div className="timeline-middle">
-                    <p className="rounded-full bg-black text-white w-10 h-10 flex justify-center items-center">2</p>
+                    <p className="rounded-full bg-black text-white w-10 h-10 flex justify-center items-center" >2</p>
                 </div>
                 <div className="timeline-end "><div>
                     <p className="font-bold text-xl">Buy Home</p>
@@ -24,7 +31,7 @@ const BulletInfo = (props) => {
                 </div></div>
 
             </li>
-            <li className="grid gap-10">
+            <li className="grid gap-10 !grid-cols-none" data-aos="fade-up" >
 
 
                 <div className="timeline-middle">
@@ -36,7 +43,7 @@ const BulletInfo = (props) => {
                 </div></div>
 
             </li>
-            <li className="grid gap-10">
+            <li className="grid gap-10 !grid-cols-none" data-aos="fade-up">
 
 
                 <div className="timeline-middle">
@@ -48,7 +55,7 @@ const BulletInfo = (props) => {
                 </div></div>
 
             </li>
-            <li className="grid gap-10">
+            <li className="grid gap-10 !grid-cols-none" data-aos="fade-up" >
 
                 <div className="timeline-middle">
                     <p className="rounded-full bg-black text-white w-10 h-10 flex justify-center items-center">5</p>
