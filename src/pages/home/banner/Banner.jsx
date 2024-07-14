@@ -16,7 +16,7 @@ import resort from '../../../assets/resort.jpg'
 
 const Banner = (props) => {
     return (
-        <div className='w-1/2'>
+        <div className='lg:w-1/2 w-full lg:z-10 -z-10'>
 
 
             <Swiper
@@ -24,6 +24,7 @@ const Banner = (props) => {
                 effect="cube"
                 slidesPerView={1}
                 navigation
+
                 pagination={{ clickable: true }}
                 autoplay={{ delay: 2000 }}
 

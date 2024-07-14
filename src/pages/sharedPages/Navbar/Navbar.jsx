@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Authentication/AuthProvider";
+import logo from "../../../assets/logo.png"
 
 const Navbar = (props) => {
     const { user, logout } = useContext(AuthContext)
@@ -13,10 +14,10 @@ const Navbar = (props) => {
     const navlist = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/properties">Properties</NavLink></li>
-        <li><NavLink to={`/profile/${user.uid}`}>About</NavLink></li>
+
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 mb-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,7 +40,7 @@ const Navbar = (props) => {
                         {navlist}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost text-xl"><img className="w-12" src={logo} alt="" /><span>Luxudo</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -64,7 +65,7 @@ const Navbar = (props) => {
                             </div>
 
                         </div>
-                        <Link to={`profile/${user.uid}`}>{user.displayName}</Link>
+                        <Link className="hover:underline hover:text-blue-600 lg:block hidden" to={`profile/${user.uid}`}>{user.displayName}</Link>
                         <button onClick={handleLogout} className="btn">Logout</button>
                     </div> :
                     <div>

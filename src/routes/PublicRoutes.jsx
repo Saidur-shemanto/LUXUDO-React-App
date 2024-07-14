@@ -9,6 +9,7 @@ import Login from "../pages/login/Login";
 import PropertyDetails from "../pages/propertyDetail/PropertyDetail";
 import PrivateRoute from "./PrivateRoute";
 import UserProfile from "../pages/userProfile/UserProfile";
+import PropertyLists from "../pages/propertyList/PropertyLists";
 const PublicRoutes = createBrowserRouter([
     {
         path: "/",
@@ -20,7 +21,7 @@ const PublicRoutes = createBrowserRouter([
             },
             {
                 path: '/properties',
-                element: <Home></Home>
+                element: <PropertyLists></PropertyLists>
             },
             {
                 path: '/properties/:id',

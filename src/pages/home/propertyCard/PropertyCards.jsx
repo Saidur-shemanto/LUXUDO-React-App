@@ -23,10 +23,23 @@ const PropertyCard = (props) => {
             modules={[Scrollbar, A11y, Autoplay]}
             slidesPerView={4}
             spaceBetween='100'
+            breakpoints={{
+                370: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 100,
+                },
+            }}
+
+
             autoplay={{
                 disableOnInteraction: false,
                 delay: 1000,
                 pauseOnMouseEnter: true,
+
             }}
 
 
@@ -36,7 +49,7 @@ const PropertyCard = (props) => {
             {properties.map(property => <SwiperSlide key={property.id}><PropertyIndiv property={property}></PropertyIndiv></SwiperSlide>)}
 
 
-        </Swiper>
+        </Swiper >
 
 
     )

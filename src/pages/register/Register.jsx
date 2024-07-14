@@ -47,28 +47,28 @@ const Register = (props) => {
 
 
 
-        <div className="card bg-base-100 w-full max-w-lg shrink-0 shadow-2xl mx-auto">
-            <form className="card-body" onSubmit={handleSubmit(onSubmit)}>
+        <div className="card bg-front-door max-w-lg shrink-0 shadow-2xl mx-auto mb-[100px]">
+            <form className="card-body w-full bg-[rgba(255,255,255,0.8)]" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-control">
-                    <label className="label">
+                    <label className="label font-bold">
                         <span className="label-text">Name</span>
                     </label>
                     <input type="text" name="name" placeholder="Name" className="input input-bordered" {...register("name")} required />
                 </div>
                 <div className="form-control">
-                    <label className="label">
+                    <label className="label font-bold">
                         <span className="label-text">Image</span>
                     </label>
                     <input type="text" placeholder="Image" name="image" className="input input-bordered" {...register("image")} required />
                 </div>
                 <div className="form-control">
-                    <label className="label">
+                    <label className="label font-bold">
                         <span className="label-text">Email</span>
                     </label>
                     <input type="email" name="email" placeholder="email" className="input input-bordered" {...register("email")} required />
                 </div>
                 <div className="form-control">
-                    <label className="label">
+                    <label className="label font-bold">
                         <span className="label-text">Password</span>
                     </label>
                     <div className="flex relative">
@@ -85,7 +85,7 @@ const Register = (props) => {
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Register</button>
                 </div>
-                <p>Already have an account? <Link to='/login'><span className="text-purple-500 underline">Login</span></Link></p>
+                <p className="font-semibold">Already have an account? <Link to='/login'><span className="text-purple-500 underline">Login</span></Link></p>
             </form>
 
         </div>
