@@ -51,10 +51,10 @@ const Navbar = (props) => {
 
             <div className="navbar-end">
                 {user ?
-                    <div className="flex gap-2 items-center">
+                    <div className="flex gap-2 items-center " >
 
 
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
 
 
 

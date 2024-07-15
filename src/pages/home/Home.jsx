@@ -11,6 +11,8 @@ import BulletInfoImage from "./bulletInfo/BulletInfoImage";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+
 
 const Home = (props) => {
     useEffect(() => {
@@ -22,6 +24,9 @@ const Home = (props) => {
 
     return (
         <div className="mx-auto container space-y-20">
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <div className="flex lg:flex-row flex-col-reverse ">
                 <BannerText></BannerText>
                 <Banner></Banner>

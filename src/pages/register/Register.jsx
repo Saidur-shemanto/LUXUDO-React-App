@@ -4,6 +4,7 @@ import { AuthContext } from "../../Authentication/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Register = (props) => {
     const { createUser } = useContext(AuthContext)
@@ -48,6 +49,9 @@ const Register = (props) => {
 
 
         <div className="card bg-front-door max-w-lg shrink-0 shadow-2xl mx-auto mb-[100px]">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <form className="card-body w-full bg-[rgba(255,255,255,0.8)]" onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-control">
                     <label className="label font-bold">

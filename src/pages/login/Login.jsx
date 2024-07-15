@@ -4,13 +4,17 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import image from '../../assets/frontDoor.jpg'
+import { Helmet } from "react-helmet-async";
+import { FaGoogle } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 const Login = (props) => {
     const navigate = useNavigate()
     const location = useLocation()
     const [toggle, setToggle] = useState(false)
-    const { createUser, login, googleLogin } = useContext(AuthContext)
+    const { createUser, login, googleLogin, githubLogin } = useContext(AuthContext)
+    const [credError, setCredError] = useState("")
     const {
         register,
         handleSubmit,
@@ -23,6 +27,9 @@ const Login = (props) => {
                 navigate(location.state ? location.state : '/')
 
             })
+            .catch(
+                error => error.code === "auth/invalid-credential" ? setCredError("Wrong Email/Password") : setCredError("")
+            )
 
     }
     const handleGoogleLogin = () => {
@@ -31,9 +38,18 @@ const Login = (props) => {
             .catch(error => console.log(error))
 
     }
+    const handleGithubLogin = () => {
+        githubLogin()
+            .then(result => createUser(result))
+            .catch(error => console.log(error))
+
+    }
     return (
 
         <div className="card bg-front-door  w-full max-w-sm shrink-0 shadow-2xl mx-auto mb-48">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <form className="card-body  bg-[rgba(255,255,255,0.8)]" onSubmit={handleSubmit(handleEmailPassLogin)}>
                 <div className="form-control">
                     <label className="label font-bold">
@@ -54,14 +70,19 @@ const Login = (props) => {
                         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label>
                 </div>
+                <p className="text-red-500">{credError ? credError : ''}</p>
                 <div className="form-control mt-6">
                     <button className="btn btn-primary">Login</button>
                 </div>
-                <div>
-                    <button onClick={handleGoogleLogin} className="btn">Login With Google</button>
+                <div className="flex gap-2 w-full">
+                    <button onClick={handleGithubLogin} className="btn border-black border-2 w-[49%]"><FaGithub /></button>
+                    <button onClick={handleGoogleLogin} className="btn border-black border-2 w-[49%]"><FaGoogle /></button>
                 </div>
                 <p>Do not have an account? <Link to='/register'><span className="text-purple-500 underline">Register</span></Link></p>
+
+
             </form>
+
         </div>
 
 

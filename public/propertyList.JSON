@@ -8,7 +8,7 @@
         "status": "sale",
         "area": "3500 sq ft",
         "location": "Downtown City",
-        "image": "../src/assets/pentaHouse.jpeg"
+        "image": "/media/pentaHouse.jpeg"
     },
     {
         "id": "2",
@@ -19,7 +19,7 @@
         "status": "sale",
         "area": "4500 sq ft",
         "location": "Malibu, CA",
-        "image": "../src/assets/beachHouse.jpeg"
+        "image": "/media/beachHouse.jpeg"
     },
     {
         "id": "3",
@@ -30,7 +30,7 @@
         "status": "sale",
         "area": "15000 sq ft",
         "location": "Bahamas",
-        "image": "../src/assets/privateIsland.jpg"
+        "image": "/media/privateIsland.jpg"
     },
     {
         "id": "4",
@@ -41,7 +41,7 @@
         "status": "sale",
         "area": "50000 sq ft",
         "location": "Fiji",
-        "image": "../src/assets/privateIsland2.jpg"
+        "image": "/media/privateIsland2.jpg"
     },
     {
         "id": "5",
@@ -52,7 +52,7 @@
         "status": "sale",
         "area": "4000 sq ft",
         "location": "Miami, FL",
-        "image": "../src/assets/villaMansion.jpeg"
+        "image": "/media/villaMansion.jpeg"
     },
     {
         "id": "6",
@@ -63,7 +63,7 @@
         "status": "sale",
         "area": "10000 sq ft",
         "location": "Beverly Hills, CA",
-        "image": "../src/assets/villaMansion2.jpg"
+        "image": "/media/villaMansion2.jpg"
     },
     {
         "id": "7",
@@ -74,7 +74,7 @@
         "status": "sale",
         "area": "3200 sq ft",
         "location": "New York, NY",
-        "image": "../src/assets/pentaHouse2.png"
+        "image": "/media/pentaHouse2.png"
     },
     {
         "id": "8",
@@ -85,7 +85,7 @@
         "status": "sale",
         "area": "3800 sq ft",
         "location": "Maui, HI",
-        "image": "../src/assets/beachFront.jpg"
+        "image": "/media/beachFront.jpg"
     },
     {
         "id": "9",
@@ -96,7 +96,7 @@
         "status": "sale",
         "area": "20000 sq ft",
         "location": "Aspen, CO",
-        "image": "../src/assets/resort.jpg"
+        "image": "/media/resort.jpg"
     },
     {
         "id": "10",
@@ -107,6 +107,6 @@
         "status": "sale",
         "area": "12000 sq ft",
         "location": "Newport, RI",
-        "image": "../src/assets/villaMansion3.jpg"
+        "image": "/media/villaMansion3.jpg"
     }
 ]

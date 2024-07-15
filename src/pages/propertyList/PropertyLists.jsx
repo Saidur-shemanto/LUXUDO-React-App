@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PropertyListDetails from "./PropertyListDetails";
+import { Helmet } from "react-helmet-async";
 
 const PropertyLists = (props) => {
     const [properties, setProperties] = useState([])
@@ -27,6 +28,9 @@ const PropertyLists = (props) => {
 
     return (
         <div className="ml-0 lg:ml-20 w-full">
+            <Helmet>
+                <title>Property List</title>
+            </Helmet>
             <div className="flex flex-col w-full mb-4">
                 <div className="flex w-full justify-center items-center gap-2">
                     <p className="font-semibold">Segment</p>
