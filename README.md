@@ -1,8 +1,15 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Luxudo | 
 
-Currently, two official plugins are available:
+• Frontend skeleton of a real estate web applicatio \
+• Implemented User Login, Registration and Profile \
+• Implemented attractive slider using Swipper and Tailwind CSS \
+• Applied visually pleasing animations on scroll using AOS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Tech Stack
+
+**Client:** React, TailwindCSS
+
+**Tools:** Firebase
+

@@ -53,19 +53,25 @@ const Navbar = (props) => {
                 {user ?
                     <div className="flex gap-2 items-center " >
 
+                        <Link to={`profile/${user.uid}`}>
+                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
 
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar tooltip tooltip-bottom" data-tip={user.displayName}>
 
 
 
-                            <div className="w-10 rounded-full">
-                                <img
+                                <div className="w-10 rounded-full">
+                                    <img
 
-                                    src={user.photoURL} alt="Tailwind CSS Navbar component" />
+                                        src={user.photoURL} alt="Tailwind CSS Navbar component" />
+                                </div>
+
                             </div>
+                        </Link>
+                        {user.displayName ?
+                            <Link className="hover:underline hover:text-blue-600 lg:block hidden" to={`profile/${user.uid}`}>{user.displayName}</Link> : <Link className="hover:underline hover:text-blue-600 lg:block hidden" to={`profile/${user.uid}`}>User</Link>
+                        }
 
-                        </div>
-                        <Link className="hover:underline hover:text-blue-600 lg:block hidden" to={`profile/${user.uid}`}>{user.displayName}</Link>
+
                         <button onClick={handleLogout} className="btn">Logout</button>
                     </div> :
                     <div>

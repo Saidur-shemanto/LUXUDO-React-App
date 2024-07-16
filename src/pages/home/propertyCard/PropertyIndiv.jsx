@@ -3,7 +3,6 @@ import { CiLocationOn } from "react-icons/ci";
 
 const PropertyIndiv = ({ property }) => {
 
-    console.log(property)
     return (
 
         <div className=" card bg-base-100 w-96 shadow-xl">
